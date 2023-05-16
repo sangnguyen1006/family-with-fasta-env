@@ -1,0 +1,10 @@
+name: myenv
+channels:
+  - anaconda
+  - bioconda
+  - defaults
+  - conda-forge
+dependencies:
+  - minimap2=2.20=h5bf99c6_0
+  - samtools=1.16.1=h6899075_1
+  - shovill=1.0.4=0
