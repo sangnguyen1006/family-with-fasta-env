@@ -11,3 +11,28 @@ https://docs.anaconda.com/free/anaconda/install/linux/
 ## 4. Why does "(base)" appear in front of my terminal prompt?
 https://askubuntu.com/questions/1026383/why-does-base-appear-in-front-of-my-terminal-prompt
 
+## 5. Singularity tutorial video
+https://www.youtube.com/watch?v=_KhbwXqk0Bk&t=521s
+## 6. Singularity guide website
+https://sylabs.io/
+
+## 7. Install Singularity-ce & quick guide
+Firstly: install C, Golang language
+https://docs.sylabs.io/guides/latest/user-guide/quick_start.html#
+
+## 8. Fix: Could not connect to archive.ubuntu.com:80 (185.125.190.39)
+https://askubuntu.com/questions/1198621/apt-get-cannot-connect-to-ubuntu-archives
+
+https://askubuntu.com/questions/249203/what-does-sudo-echo-nameserver-8-8-8-8-etc-resolv-conf-do
+
+## 9. Fix 
+“+ apt-get -y install shovill
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+E: Unable to locate package shovill
+FATAL:   While performing build: while running engine: exit status 100”
+
+-->  Should install shovill on latest ubuntu version
+
+--> Change "From: ubuntu:20.04" to "From: ubuntu:23.04" problem solved
