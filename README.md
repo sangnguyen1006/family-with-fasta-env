@@ -30,12 +30,13 @@ $ echo nameserver 8.8.8.8 > /etc/resolv.conf
 ```
 
 ## 9. Fix 
-“+ apt-get -y install shovill
+```+ apt-get -y install shovill
 Reading package lists... Done
 Building dependency tree       
 Reading state information... Done
 E: Unable to locate package shovill
-FATAL:   While performing build: while running engine: exit status 100”
+FATAL:   While performing build: while running engine: exit status 100
+```
 
 -->  Should install shovill on latest ubuntu version
 
