@@ -1,0 +1,26 @@
+Bootstrap: docker
+From: ubuntu:23.04
+
+%environment
+    export LC_ALL=C
+    export MY_ENV="Singularity"
+
+%post
+    echo nameserver 8.8.8.8 > /etc/resolv.conf
+    apt-get update
+    apt-get -y install minimap2
+    apt-get -y install samtools
+    apt-get -y install shovill
+    NOW=`date`
+    echo "export NOW=\"${NOW}\"" >> $SINGULARITY_ENVIRONMENT
+
+%runscript
+    echo "Container was created $NOW"
+
+%labels
+    Author nguyensang2791@gmail.com
+    Version v0.0.1
+
+%help
+    This is a demo container used to illustrate a def file that uses all
+    supported sections.
