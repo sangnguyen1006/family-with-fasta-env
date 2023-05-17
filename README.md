@@ -25,6 +25,10 @@ https://askubuntu.com/questions/1198621/apt-get-cannot-connect-to-ubuntu-archive
 
 https://askubuntu.com/questions/249203/what-does-sudo-echo-nameserver-8-8-8-8-etc-resolv-conf-do
 
+```
+$ echo nameserver 8.8.8.8 > /etc/resolv.conf
+```
+
 ## 9. Fix 
 “+ apt-get -y install shovill
 Reading package lists... Done
@@ -36,3 +40,25 @@ FATAL:   While performing build: while running engine: exit status 100”
 -->  Should install shovill on latest ubuntu version
 
 --> Change "From: ubuntu:20.04" to "From: ubuntu:23.04" problem solved
+
+## 10. Common command using for working with simgularity imgae
+Build a Singulary image
+```
+$ singularity pull library://lolcow
+$ singularity build lolcow.sif docker://sylabsio/lolcow
+$ singularity build lolcow.sif lolcow.def
+$ singularity build lolcow.sif lolcow
+$ singularity build --sandbox lolcow lolcow.def
+$ singularity build --sandbox lolcow lolcow.sif
+```
+Interacting with images
+```
+$ sudo singularity shell lolcow.def
+$ sudo singulariry shell lolcow
+$ sudo singularity shell --writable lolcow.def
+$ sudo singularity shell --writable lolcow
+
+$ sudo singularity exec ubuntu echo "Hello world!"
+$ sudo singularity exec --writable ubuntu /bin/bash
+
+```
