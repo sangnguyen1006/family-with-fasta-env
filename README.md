@@ -42,7 +42,7 @@ FATAL:   While performing build: while running engine: exit status 100
 
 --> Change "From: ubuntu:20.04" to "From: ubuntu:23.04" problem solved
 
-## 10. Common command using for working with simgularity imgae
+## 10. Common command using for working with singularity imgae
 Build a Singulary image
 ```
 $ singularity pull library://lolcow
