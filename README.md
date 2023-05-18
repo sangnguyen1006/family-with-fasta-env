@@ -60,12 +60,12 @@ FATAL:   While performing build: while running engine: exit status 100
 ## 10. Common command using for working with singularity imgae
 Build a Singulary image
 ```
-$ singularity pull library://lolcow
-$ singularity build lolcow.sif docker://sylabsio/lolcow
-$ singularity build lolcow.sif lolcow.def
-$ singularity build lolcow.sif lolcow
-$ singularity build --sandbox lolcow lolcow.def
-$ singularity build --sandbox lolcow lolcow.sif
+$ sudo singularity pull library://lolcow
+$ sudo singularity build lolcow.sif docker://sylabsio/lolcow
+$ sudo singularity build lolcow.sif lolcow.def
+$ sudo singularity build lolcow.sif lolcow
+$ sudo singularity build --sandbox lolcow lolcow.def
+$ sudo singularity build --sandbox lolcow lolcow.sif
 ```
 Interacting with images
 ```
