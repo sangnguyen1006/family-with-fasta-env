@@ -11,6 +11,21 @@ https://docs.anaconda.com/free/anaconda/install/linux/
 ## 4. Why does "(base)" appear in front of my terminal prompt?
 https://askubuntu.com/questions/1026383/why-does-base-appear-in-front-of-my-terminal-prompt
 
+This can also be because auto_activate_base is set to True. You can check this using the following command
+```
+conda config --show | grep auto_activate_base
+```
+To set it false
+```
+conda config --set auto_activate_base False
+source ~/.bashrc
+```
+To reactivate set it to True
+```
+conda config --set auto_activate_base True
+source ~/.bashrc
+```
+
 ## 5. Singularity tutorial video
 https://www.youtube.com/watch?v=_KhbwXqk0Bk&t=521s
 ## 6. Singularity guide website
