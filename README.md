@@ -67,14 +67,19 @@ $ sudo singularity build lolcow.sif lolcow
 $ sudo singularity build --sandbox lolcow lolcow.def
 $ sudo singularity build --sandbox lolcow lolcow.sif
 ```
+Cache
+```
+$ singularity cache list
+$ singularity cache clean
+$ singularity cache clean --help
+```
 Interacting with images
 ```
 $ sudo singularity shell lolcow.def
 $ sudo singulariry shell lolcow
 $ sudo singularity shell --writable lolcow.def
 $ sudo singularity shell --writable lolcow
-
 $ sudo singularity exec ubuntu echo "Hello world!"
+$ sudo singularity exec ubuntu /bin/python3 main.py
 $ sudo singularity exec --writable ubuntu /bin/bash
-
 ```
