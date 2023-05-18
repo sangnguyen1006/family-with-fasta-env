@@ -83,3 +83,7 @@ $ sudo singularity exec ubuntu echo "Hello world!"
 $ sudo singularity exec ubuntu /bin/python3 main.py
 $ sudo singularity exec --writable ubuntu /bin/bash
 ```
+## 11. Lean basic Docker and Singularity
+https://epcced.github.io/2020-12-08-Containers-Online/
+
+
