@@ -1,6 +1,6 @@
 # Family with fasta, Conda yaml file and Singularity image
 
-## 1.Basic writing and formatting syntax in README file
+## 1
 https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
 ## 2. How to install packages from yaml file in conda?
 https://stacktuts.com/how-to-install-packages-from-yaml-file-in-conda
